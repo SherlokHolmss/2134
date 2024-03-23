@@ -1,0 +1,63 @@
+.features {
+    padding: 60px 0 30px 0;
+
+    @include desc(1200px) {
+        padding: 94px 0;
+    }
+
+    &-list {
+        @include tab(769px) {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+            justify-content: center;
+
+            &-item {
+                display: flex;
+                flex-direction: row;
+            }
+            &-description{
+                width: 354px;
+
+            }
+        }
+        &-title {
+            @include fontstyles(Roboto, 14px, 700, 1.1, 0.03em, center, $color-black);
+            padding-top: 30px;
+            padding-bottom: 10px;
+            @include desc(1200px){
+                @include fontstyles(Roboto, 14px, 700, 1.1, 0.03em, left, $color-black);
+            }
+        }
+
+        &-description {
+            @include fontstyles(Roboto, 14px, 400, 1.1, 0.03em, left, $color-p);
+            width: 450px;
+            margin-bottom: 30px;
+            @include desc(1200px){
+                width: 270px;
+            }
+        }
+    }
+}
+
+
+.features-list-image-first::before {
+    background-image: url("../img/firstbg.jpg");
+    @extend %before-image;
+}
+
+.features-list-image-second::before {
+    background-image: url("../img/secondbg.jpg");
+    @extend %before-image;
+}
+
+.features-list-image-third::before {
+    background-image: url("../img/thirdbg.jpg");
+    @extend %before-image;
+}
+
+.features-list-image-fourth::before {
+    background-image: url("../img/fourthbg.jpg");
+    @extend %before-image;
+}
