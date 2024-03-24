@@ -4,9 +4,11 @@
 }
 %before-image{
     content: "";
-    width: 270px;
+    width: 450px;
     height: 120px;
     border-radius: 4px;
     background-repeat: no-repeat;
+    background-position: center;
+    background-color:$color-section-command;
     display: inline-block;
 }

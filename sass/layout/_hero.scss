@@ -9,7 +9,7 @@
         @include fontstyles(Roboto, 44px, 900, 1.3, 0.06em, center,$color-section-hero);
         margin: 0 auto;
         max-width: 360px;
-        @include tab(769px){
+        @include tab(768px){
             @include fontstyles(Roboto, 26px, 900, 1.6, 0.06em, center,$color-section-hero);
         }
         @include desc(1200px){

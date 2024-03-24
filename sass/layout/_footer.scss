@@ -14,16 +14,17 @@
 
     &-wrap {
         display: flex;
-        gap: 70px;
+        gap: 60px 165px;
+        flex-wrap: wrap;
         align-items: center;
         flex-direction: column;
     }
 }
-
-.footer-form-div {
-    width: 558px;
-
+.footer-info{
+    text-align: center;
 }
+
+
 
 .footer-icons-title {
     font-family: Roboto;
@@ -31,8 +32,10 @@
     font-weight: 700;
     line-height: 16px;
     letter-spacing: 0.03em;
-    text-align: left;
+    text-align: center;
     color: #FFFFFF;
+    margin-bottom: 20px;
+    // iclude
 }
 
 
@@ -42,6 +45,7 @@
     gap: 10px;
     justify-content: center;
     margin-top: 16px;
+    
 }
 
 .footer-icons-list-item-link {
@@ -73,14 +77,22 @@
 }
 .footer-form {
     display: flex;
-    gap: 12px;
-
+    gap: 20px 12px;
+    flex-direction: column;
+    align-items: center;
+    @include desc(1200px){
+        flex-direction: row;
+    }
     &-input {
         border: 1px solid #FFFFFF;
         opacity: 20%;
         background-color: #2F303A;
-        width: 358px;
-        height: 50px;
+        border-radius: 4px;
+        padding: 15px;
+        min-width: 450px;
+        @include desc(1200px){
+            min-width: 258px;
+        }
     }
 
     &-title {
@@ -89,24 +101,20 @@
         font-weight: 700;
         line-height: 16px;
         letter-spacing: 0.03em;
+        text-align: center;
         color: $color-footer-info;
         margin-bottom: 20px;
-        height: 16px;
+        text-transform: uppercase;
+        // iclude
     }
 
     &-button {
         display: flex;
-        justify-content: center;
         align-items: center;
         gap: 10px;
-    }
-
-    &-button {
-        width: 200px;
-        height: 50px;
         border-radius: 4px;
+        padding: 10px 31px;
         background-color: $color-blue;
-
     }
 }
 

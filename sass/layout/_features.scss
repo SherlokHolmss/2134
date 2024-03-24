@@ -32,7 +32,7 @@
 
         &-description {
             @include fontstyles(Roboto, 14px, 400, 1.1, 0.03em, left, $color-p);
-            width: 450px;
+            max-width: 450px;
             margin-bottom: 30px;
             @include desc(1200px){
                 width: 270px;
