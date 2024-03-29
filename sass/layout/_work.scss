@@ -1,18 +1,20 @@
-@media screen and (max-width:1200px){
-    .section-work{
-        display: none;
-    }
-}
+
 .section-work {
     padding: 94px 0;
+    display: none;
+    @include desc(1200px){
+        display: block;
+    }
 }
-
+.work-list-images{
+    width: 370px;
+    height: 294px;
+}
 .section-work-item-wrap {
     position: relative;
 }
 .section-work-list {
     display: flex;
-    flex-direction: column;
     gap: 30px;
 }
 .section-work-item-description {

@@ -6,6 +6,7 @@
         padding: 200px 0;
     }
     &-title {
+        text-transform: uppercase;
         @include fontstyles(Roboto, 44px, 900, 1.3, 0.06em, center,$color-section-hero);
         margin: 0 auto;
         max-width: 360px;
