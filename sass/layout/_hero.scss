@@ -27,7 +27,7 @@
         display: block;
         margin: 0 auto;
         margin-top: 30px;
-        @include tab(769px){
+        @include tab(768px){
             width: 200px;
         }
         @include desc(1200px){

@@ -6,7 +6,7 @@
     }
 
     &-list {
-        @include tab(769px) {
+        @include tab(768px) {
             display: flex;
             flex-wrap: wrap;
             gap: 30px;
