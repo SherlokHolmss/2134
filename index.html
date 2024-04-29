@@ -13,12 +13,11 @@
     <header class="header">
         <div class="container">
             <div class="header-wrap">
-                <a href="" target="_blank"
-                    class="header-logo"><span>Web</span>Studio</a>
+                <a href="" target="_blank" class="header-logo"><span>Web</span>Studio</a>
                 <nav class="navigation">
                     <ul class="navigation-list">
-                        <li class="navigation-list-item"><a href="https://sherlokholmss.github.io/WebStudioSASSADAPTIVE/"
-                                target="_blank"
+                        <li class="navigation-list-item"><a
+                                href="https://sherlokholmss.github.io/WebStudioSASSADAPTIVE/" target="_blank"
                                 class="navigation-list-item-link studio-header-link navigation-list-item-link-current">Студія
                             </a></li>
                         <li class="navigation-list-item"><a href="https://sherlokholmss.github.io/PortfolioSASS/"
@@ -48,11 +47,50 @@
                         <a href="tel:+380961111111" class="contacts-list-item">+380961111111</a>
                     </li>
                 </ul>
-                <button class="burger-menu">
-                    <svg class="burger-menu-icon" width="24" height="16">
+                <button class="burger-menu menu-open-btn">
+                    <svg class="burger-menu-icon " width="24" height="16">
                         <use href="./img/symbol-defs.svg#burger-menu"></use>
                     </svg>
                 </button>
+            </div>
+        </div>
+        <div class="mobile-menu  is-hidden">
+            <div class="container mobile-menu-container">
+                <div class="mobile-menu-top">
+                    <button type="button" class="mobile-menu-button-close menu-close-btn">
+                        <svg class="mobile-menu-close-svg" width="19"height="19">
+                            <use href="./img/symbol-defs.svg#icon-exit"></use>
+                        </svg>
+                    </button>
+                    <nav class="mobile-menu-navigation">
+                        <ul class="mobile-menu-navigation-list">
+                            <li class="mobile-menu-navigation-list-item"><a href=""
+                                    class="mobile-menu-navigation-list-link">Студія</a></li>
+                            <li class="mobile-menu-navigation-list-item"><a href=""
+                                    class="mobile-menu-navigation-list-link">Портфоліо</a></li>
+                            <li class="mobile-menu-navigation-list-item"><a href=""
+                                    class="mobile-menu-navigation-list-link">Контакти</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="mobile-menu-bottom">
+                    <ul class="mobile-menu-contacts-list">
+                        <li class="mobile-menu-contacts-list-item"><a href=""
+                                class="mobile-menu-contacts-list-link">+38 096 111 11 11</a></li>
+                        <li class="mobile-menu-contacts-list-item"><a href=""
+                                class="mobile-menu-contacts-list-link">info@devstudio.com</a></li>
+                    </ul>
+                    <ul class="mobile-menu-social-list">
+                        <li class="mobile-menu-social-list-item"><a href=""
+                                class="mobile-menu-social-list-link">Instagram</a></li>
+                        <li class="mobile-menu-social-list-item"><a href=""
+                                class="mobile-menu-social-list-link">Twitter</a></li>
+                        <li class="mobile-menu-social-list-item"><a href=""
+                                class="mobile-menu-social-list-link">Facebook</a></li>
+                        <li class="mobile-menu-social-list-item"><a href=""
+                                class="mobile-menu-social-list-link">LinkedIn</a></li>
+                    </ul>
+                </div>
             </div>
         </div>
     </header>
@@ -461,6 +499,7 @@
     </div>
     <script src="./js/fixed-header.js"></script>
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
 </body>
 
 </html>
