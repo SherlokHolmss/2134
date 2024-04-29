@@ -365,6 +365,9 @@ span {
   text-align: left;
   color: rgb(33, 33, 33);
 }
+.mobile-menu-navigation-list-link:hover {
+  color: rgb(33, 150, 243);
+}
 
 .mobile-menu-close-svg {
   fill: currentColor;
