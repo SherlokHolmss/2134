@@ -58,7 +58,7 @@
             <div class="container mobile-menu-container">
                 <div class="mobile-menu-top">
                     <button type="button" class="mobile-menu-button-close menu-close-btn">
-                        <svg class="mobile-menu-close-svg" width="19"height="19">
+                        <svg class="mobile-menu-close-svg" width="19" height="19">
                             <use href="./img/symbol-defs.svg#icon-exit"></use>
                         </svg>
                     </button>
@@ -75,8 +75,8 @@
                 </div>
                 <div class="mobile-menu-bottom">
                     <ul class="mobile-menu-contacts-list">
-                        <li class="mobile-menu-contacts-list-item"><a href=""
-                                class="mobile-menu-contacts-list-link">+38 096 111 11 11</a></li>
+                        <li class="mobile-menu-contacts-list-item"><a href="" class="mobile-menu-contacts-list-link">+38
+                                096 111 11 11</a></li>
                         <li class="mobile-menu-contacts-list-item"><a href=""
                                 class="mobile-menu-contacts-list-link">info@devstudio.com</a></li>
                     </ul>
@@ -144,20 +144,36 @@
                 <h2 class="section-work-title">Чим ми займаємося</h2>
                 <ul class="section-work-list">
                     <li class="section-work-item">
-                        <div class="section-work-item-wrap"><img src="./img/workfirst.jpg" alt="упс"
-                                class="work-list-images">
+                        <div class="section-work-item-wrap">
+                            <picture>
+                                <source media="(min-width:1200px)"
+                                    srcset="./img/workfirst.jpg 1x, ./img/2x-desc-work-first.jpg 2x , ./img/3x-desc-work-first.jpg 3x"
+                                    type="image/jpeg" />
+                                <img src="./img/workfirst.jpg" alt="" class="work-list-images">
+                            </picture>
                             <p class="section-work-item-description">Десктопні додатки</p>
                         </div>
                     </li>
+
                     <li class="section-work-item">
-                        <div class="section-work-item-wrap"><img src="./img/worksecond.jpg" alt="упс"
-                                class="work-list-images">
+                        <div class="section-work-item-wrap">
+                            <picture>
+                                <source media="(min-width:1200px)"
+                                    srcset="./img/worksecond.jpg 1x, ./img/2x-desc-work-second.jpg 2x , ./img/3x-desc-work-second.jpg 3x"
+                                    type="image/jpeg" />
+                                <img src="./img/worksecond.jpg" alt="упс" class="work-list-images">
+                            </picture>
                             <p class="section-work-item-description">Мобільні додатки</p>
                         </div>
                     </li>
                     <li class="section-work-item">
-                        <div class="section-work-item-wrap"><img src="./img/workthird.jpg" alt="упс"
-                                class="work-list-images">
+                        <div class="section-work-item-wrap">
+                            <picture>
+                                <source media="(min-width:1200px)"
+                                    srcset="./img/workthird.jpg 1x, ./img/2x-desc-work-third.jpg 2x , ./img/3x-desc-work-third.jpg 3x"
+                                    type="image/jpeg" />
+                                <img src="./img/workthird.jpg" alt="упс" class="work-list-images">
+                            </picture>
                             <p class="section-work-item-description">Дизайнерські рішення</p>
                         </div>
                     </li>
@@ -171,7 +187,18 @@
                 <h2 class="section-team-title">Наша команда</h2>
                 <ul class="team-list">
                     <li class="team-list-item">
-                        <img src="./img/firstman.jpg" alt="упс" class="team-list-images">
+                        <picture>
+                            <source media="(min-width:1200px)"
+                                srcset="./img/firstman.jpg 1x, ./img/2x-desc-team-first.jpg 2x, ./img/3x-desc-team-first.jpg3x"
+                                type="image/jpeg">
+                            <source media="(min-width:768px)"
+                                srcset="./img/firstman.jpg 1x, ./img/2x-tab-team-first.jpg 2x, ./img/3x-tab-team-first.jpg 3x"
+                                type="image/jpge">
+                            <source media="(max-width:768px)"
+                                srcset="./img/firstman.jpg 1x, ./img/2x-mob-team-first.jpg 2x, ./img/3x-mob-team-first.jpg 3x"
+                                type="image/jpeg">
+                            <img src="./img/fourthman.jpg" alt="упс" class="team-list-images">
+                        </picture>
                         <div>
                             <h3 class="team-list-title">Ігор Дем'яненко</h3>
                             <p class="team-list-description"> Product Designer</p>
@@ -208,7 +235,19 @@
                         </ul>
                     </li>
                     <li class="team-list-item">
-                        <img src="./img/secondwomen.jpg" alt="упс" class="team-list-images">
+                        <picture>
+                            <source media="(min-width:1200px)"
+                                srcset="./img/secondwomen.jpg 1x, ./img/2x-desc-team-second.jpg 2x, ./img/3x-desc-team-second.jpg3x"
+                                type="image/jpeg">
+                            <source media="(min-width:768px)"
+                                srcset="./img/secondwomen.jpg 1x, ./img/2x-tab-team-second.jpg 2x, ./img/3x-tab-team-second.jpg 3x"
+                                type="image/jpge">
+                            <source media="(max-width:768px)"
+                                srcset="./img/secondwomen.jpg 1x, ./img/2x-mob-team-second.jpg 2x, ./img/3x-mob-team-second.jpg 3x"
+                                type="image/jpeg">
+                            <img src="./img/secondwomen.jpg" alt="упс" class="team-list-images">
+                        </picture>
+
                         <div>
                             <h3 class="team-list-title">Ольга Рєпіна</h3>
                             <p class="team-list-description"> Frontend Developer</p>
@@ -245,7 +284,18 @@
                         </ul>
                     </li>
                     <li class="team-list-item">
-                        <img src="./img/thirdman.jpg" alt="упс" class="team-list-images">
+                        <picture>
+                            <source media="(min-width:1200px)"
+                                srcset="./img/thirdman.jpg 1x, ./img/2x-desc-team-third.jpg 2x, ./img/3x-desc-team-third.jpg3x"
+                                type="image/jpeg">
+                            <source media="(min-width:768px)"
+                                srcset="./img/thirdman.jpg 1x, ./img/2x-tab-team-third.jpg 2x, ./img/3x-tab-team-third.jpg 3x"
+                                type="image/jpge">
+                            <source media="(max-width:768px)"
+                                srcset="./img/thirdman.jpg 1x, ./img/2x-mob-team-third.jpg 2x, ./img/3x-mob-team-third.jpg 3x"
+                                type="image/jpeg">
+                            <img src="./img/thirdman.jpg" alt="упс" class="team-list-images">
+                        </picture>
                         <div>
                             <h3 class="team-list-title">Микола Тарасов</h3>
                             <p class="team-list-description"> Marketing</p>
@@ -282,7 +332,19 @@
                         </ul>
                     </li>
                     <li class="team-list-item">
-                        <img src="./img/firstman.jpg" alt="упс" class="team-list-images">
+                        <picture>
+                            <source media="(min-width:1200px)"
+                                srcset="../img/firstman.jpg 1x, ./img/2x-desc-team-fourth.jpg 2x, ./img/3x-desc-team-fourth.jpg 3x"
+                                type="image/jpeg">
+                            <source media="(min-width:768px)"
+                                srcset="./img/firstman.jpg 1x, ./img/2x-tab-team-fourt.jpg 2x, ./img/3x-tab-team-fourt.jpg 3x"
+                                type="image/jpeg">
+                            <source media="(max-width:768px)"
+                                srcset="./img/firstman.jpg 1x, ./img/2x-mob-team-fourth.jpg 2x, ./img/3x-mob-team-fourth.jpg 3x"
+                                type="image/jpeg">
+                            <img src="./img/firstman.jpg" alt="упс" class="team-list-images">
+                        </picture>
+
                         <div>
                             <h3 class="team-list-title">Михайло Єрмаков</h3>
                             <p class="team-list-description"> UI Designer</p>

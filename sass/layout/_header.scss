@@ -36,7 +36,8 @@
         flex-direction: column;
         gap: 10px;
     }
-    @include desc(1200px){
+
+    @include desc(1200px) {
         flex-direction: row;
         align-items: center;
         gap: 30px;
@@ -81,6 +82,7 @@
 .navigation-list {
     display: none;
     margin-right: 90px;
+
     @include tab(768px) {
         display: flex;
         gap: 50px;
