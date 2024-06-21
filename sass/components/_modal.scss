@@ -74,7 +74,9 @@
 .modal-link-close-svg {
     fill: currentColor;
 }
-
+.modal-link-close{
+    color: black;
+}
 .modal-form {
     display: flex;
     flex-direction: column;
@@ -113,10 +115,10 @@
 }
 
 .modal-svg {
-
     position: absolute;
     left: 12px;
-    top: 11px;
+    top: 0;
+    fill: currentColor;
 }
 
 .modal-wrap {
@@ -142,8 +144,8 @@
     line-height: 24px;
     letter-spacing: 0.03em;
     text-align: left;
-    color: var(--color-blue);
-    border-bottom: 1px solid var(--color-blue);
+    color: $color-blue;
+    border-bottom: 1px solid $color-blue;
 }
 
 .modal-second-wrap {
@@ -170,4 +172,5 @@
     color: #e1e1ff;
     background-color: #188CE8;
     padding: 10px 52px;
+    margin-top: 30px;
 }
